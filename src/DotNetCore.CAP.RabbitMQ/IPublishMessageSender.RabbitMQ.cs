@@ -20,7 +20,7 @@ namespace DotNetCore.CAP.RabbitMQ
         private readonly RabbitMQOptions _rabbitMQOptions;
 
         public RabbitMQPublishMessageSender(ILogger<RabbitMQPublishMessageSender> logger, CapOptions options,
-            IStorageConnection connection, IConnectionChannelPool connectionChannelPool, IStateChanger stateChanger,, RabbitMQOptions mqOptions)
+            IStorageConnection connection, IConnectionChannelPool connectionChannelPool, IStateChanger stateChanger, RabbitMQOptions mqOptions)
             : base(logger, options, connection, stateChanger)
         {
             _logger = logger;
